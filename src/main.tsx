@@ -7,7 +7,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <BrowserRouter basename={import.meta.env.DEV ? "/" : "/shopping-cart/"}>
+  <BrowserRouter>
     <App />
   </BrowserRouter>
 );
