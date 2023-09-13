@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Home, Store, About } from "./pages";
 import { Navbar } from "./components";
 import { Container } from "react-bootstrap";
@@ -12,10 +12,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/store" element={<Store />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Container>
     </ShoppingCartProvider>
-    
   );
 }
 
